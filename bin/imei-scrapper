@@ -1,4 +1,3 @@
 #!/usr/bin/env ruby
 require 'imei-scrapper'
-
-puts ImeiScrapper::Scrapper.new(ARGV[0]).scrap.body
+puts ImeiScrapper::Scrapper.new(ARGV[0]).get_info
