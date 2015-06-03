@@ -1,13 +1,20 @@
-Gem::Specification.new do |s|
-  s.name        = 'imei-scrapper'
-  s.version     = '0.0.0'
-  s.date        = '2015-06-02'
-  s.summary     = 'Apple IMEI scrapper'
-  s.description = 'Apple IMEI scrapper'
-  s.authors     = ['Andrey Chernyshev']
-  s.email       = 'libdual@yandex.ru'
-  s.files       = %w(lib/imei-scrapper.rb lib/imei-scrapper/js-parser.rb)
-  s.homepage    = 'http://rubygems.org/gems/imei-scrapper'
-  s.license       = 'MIT'
-  s.executables = ['imei-scrapper']
+Gem::Specification.new do |spec|
+  spec.name        = 'imei-scrapper'
+  spec.version     = '0.0.0'
+  spec.date        = '2015-06-02'
+  spec.summary     = 'Apple IMEI scrapper'
+  spec.description = 'Apple IMEI scrapper'
+  spec.authors     = ['Andrey Chernyshev']
+  spec.email       = 'libdual@yandex.ru'
+  spec.files       = %w(lib/imei-scrapper.rb lib/imei-scrapper/js-parser.rb)
+  spec.homepage    = 'http://rubygems.org/gems/imei-scrapper'
+  spec.license       = 'MIT'
+  spec.executables = ['imei-scrapper']
+  spec.files         = `git ls-files -z`.split("\x0")
+  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.require_paths = ["lib"]
+
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rspec'
 end
