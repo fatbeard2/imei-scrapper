@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name        = 'imei-scrapper'
-  spec.version     = '0.0.0'
+  spec.version     = '0.0.1'
   spec.date        = '2015-06-02'
   spec.summary     = 'Apple IMEI scrapper'
   spec.description = 'Apple IMEI scrapper'

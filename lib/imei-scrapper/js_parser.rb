@@ -1,3 +1,5 @@
+require 'date'
+
 module ImeiScrapper
   class JSParser
     DATE_PATTERN = /Expiration Date: (.*? \d\d, \d\d\d\d)/

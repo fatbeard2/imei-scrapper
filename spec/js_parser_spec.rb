@@ -1,4 +1,3 @@
-
 RSpec.describe ImeiScrapper::JSParser do
 
   let(:parser) { ImeiScrapper::JSParser }

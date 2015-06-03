@@ -15,8 +15,5 @@ require 'imei-scrapper'
 ImeiScrapper::Scrapper.new('imei').get_info
 ```
 
-#TODO
-
-make it work correctly as a gem
 
 
